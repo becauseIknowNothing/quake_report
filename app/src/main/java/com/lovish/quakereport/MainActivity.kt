@@ -21,11 +21,11 @@ class MainActivity : AppCompatActivity() {
         earthquakes.add(Earthquake(232, "San Francisco", "efdsfds"))
         earthquakes.add(Earthquake(232, "San Francisco", "efdsfds"))
         earthquakes.add(Earthquake(232, "San Francisco", "efdsfds"))
-        earthquakes.add(Earthquake(232, "San Francisco", "efdsfds"))
+        earthquakes.add(Earthquake(212, "San Francisco", "efdsfds"))
         earthquakes.add(Earthquake(232, "San Francisco", "efdsfds"))
         val items = EarthquakeAdapter(earthquakes)
         val rv = findViewById<RecyclerView>(R.id.recyclerView)
-        rv.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+        rv.layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
         rv.adapter = items
     }
 }
